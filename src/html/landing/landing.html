@@ -1,0 +1,28 @@
+<?php session_start();
+
+$mrkrabs = $_SESSION['username'];
+
+set_include_path(dirname(__FILE__)."/../");
+
+//require 'php/login.php';
+
+
+if(!isset($mrkrabs)){
+    header("location: /index.html");
+    die();
+  }
+  else {
+  }
+?>
+
+<head>
+    <link rel="stylesheet" href="../css/default.css">
+</head>
+<div class="header">
+    <img src="../public/admin/logoheader.png" alt="Nostalgiabook" div class="logo" style="height:35px;">
+</div>
+
+<p class="dispname"> PLACEHOLDER</p>
+<p class="username"> @<?php echo $mrkrabs;?> </p>
+<a href="../settings/settings.html" class="edit"> Settings</a>
+<img class="pfp" src="../assets/profile_pic.png"> </img>

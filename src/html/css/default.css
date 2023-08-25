@@ -1,0 +1,46 @@
+.header {
+    background: #0fa3ff;
+    color: white;
+    margin-top: -8px !important;
+    margin-left: -8px !important;
+}
+
+
+
+.logo {
+    margin-left: 348px !important;
+}
+
+.settings {
+    margin-left: 1073px;
+    margin-bottom: 3px;
+}
+
+
+.dispname {
+    margin-left: 396px !important;
+    margin-top: 9px !important;
+    margin-bottom: 3px;
+}
+
+.username {
+    margin-left: 396px !important;
+    margin-top: -5px !important;
+    margin-bottom: 3px;
+}
+
+
+
+.pfp {
+    margin-left : -123px !important;
+    width: 52px;
+    margin-top: -63px;
+    margin-bottom: 3px;
+}
+
+.edit {
+    margin-left : 396px !important;
+    width: 56px;
+    margin-top: -45px;
+    margin-bottom: 3px;
+}

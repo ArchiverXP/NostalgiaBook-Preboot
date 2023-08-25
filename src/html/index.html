@@ -1,0 +1,36 @@
+<?php require "php/login.php" ?>
+
+<head>
+    <link rel="stylesheet" href="css/default.css">
+</head>
+<div class="header">
+    <img src="public/admin/logoheader.png" alt="Nostalgiabook" div class="logo" style="height:35px;">
+</div>
+
+
+
+
+
+
+<p> Welcome to Nostalgiabook! This is aimed to be an open source Fediverse reimplementation of Toonbook as it stood back during the early to mid 2010s, minus all the errors that happened. </p>
+
+<p> SIGN UP: </p>
+<form id="signup" action="<?php echo htmlspecialchars("/php/signup.php");?>" method="post">
+Username: <input type="text" name="name"><br>
+<span class="error"> <?php echo $nameErr;?></span>
+<br><br>
+Password: <input type="password" name="password"><br>
+<span class="error"> <?php echo $passErr;?></span>
+<input type="submit">
+</form>
+
+<p> LOG IN:</p>
+<form id="login" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+  Username: <input type="text" name="name"><br>
+  <span class="error"> <?php echo $nameErr;?></span>
+  <br><br>
+  Password: <input type="password" name="password"><br>
+  <span class="error"> <?php echo $passErr;?></span>
+  <input type="submit" name="submit">
+  </form>
+
