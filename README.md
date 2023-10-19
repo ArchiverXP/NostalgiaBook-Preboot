@@ -27,7 +27,7 @@ use nostbook;
 CREATE TABLE toons (
     id INT,
     username TEXT,
-    password TEXT,
+    password TEXT
 ); 
 \q
 ```
